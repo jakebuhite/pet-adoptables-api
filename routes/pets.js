@@ -8,8 +8,8 @@ router.route('/')
 
 router.route('/:id')
     .get(petController.getPetById)
-    .put('/', petController.editPet)
-    .delete('/', petController.deletePet);
+    .put(petController.editPet)
+    .delete(petController.deletePet);
 
 router.get('/types', petController.getPetTypes);
 
