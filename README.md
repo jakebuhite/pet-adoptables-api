@@ -11,7 +11,7 @@ A REST API built using Node.js, Express.js, and PostgreSQL.
 * Setup PostgreSQL database (SQL file include in repo)
 * Run the following commands in terminal:
   * ```npm install```
-  * ```npm start```
+  * ```node app.js```
 
 ### API Endpoints
 
