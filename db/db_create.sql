@@ -17,7 +17,7 @@ CREATE TABLE users(
 
 CREATE TABLE userspets(
     id SERIAL PRIMARY KEY,
-    pet_id INT,
-    owner_id INT,
+    pet_type INT,
+    owner_id INT DEFAULT 1,
     date_created TIMESTAMP DEFAULT NOW()
 );

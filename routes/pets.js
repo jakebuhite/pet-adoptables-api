@@ -2,9 +2,14 @@ const express = require('express');
 const router = express.Router();
 const petController = require('../controllers/pets');
 
-router.get('/', petController.getUsersPets);
+router.route('/')
+    .get(petController.getUsersPets)
+    .post(petController.createPet);
 
-router.get('/:id', petController.getPetById);
+router.route('/:id')
+    .get(petController.getPetById)
+    .put('/', petController.editPet)
+    .delete('/', petController.deletePet);
 
 router.get('/types', petController.getPetTypes);
 
